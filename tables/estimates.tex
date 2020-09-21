@@ -1,0 +1,37 @@
+\begin{tabular}{l c c c c c c}
+\toprule
+\multicolumn{7}{l}{Dependent variable: Co-authored in year $t$ ($\mathtt{coauth}_{ijt}$)} \\
+& \multicolumn{2}{c}{All pairs (coefficients)} & \multicolumn{4}{c}{Pairs with variation in $\mathtt{coauth}$} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-7}
+& & & \multicolumn{3}{c}{Coefficients} & APEs \\
+\cmidrule(lr){4-6}
+& (1) & (2) & (3) & (4) & (5a) & (5b) \\
+\midrule
+First round co-members ($\mathtt{first}$) & $0.248^{***}$ & $0.223^{***}$ & $0.728^{***}$ & $0.650^{***}$ & $0.715^{***}$ & $0.138^{***}$ \\
+& $(0.017)$ & $(0.018)$ & $(0.022)$ & $(0.022)$ & $(0.057)$ & $(0.012)$ \\
+Second round co-members ($\mathtt{second}$) & $0.137^{***}$ & $0.013$ & $-0.017$ & $-0.046$ & $-0.087$ & $-0.015$ \\
+& $(0.029)$ & $(0.030)$ & $(0.037)$ & $(0.037)$ & $(0.099)$ & $(0.016)$ \\
+Funded co-members ($\mathtt{funded}$) & $0.631^{***}$ & $0.409^{***}$ & $0.129^{**}$ & $0.101^{*}$ & $0.086$ & $0.015$ \\
+& $(0.031)$ & $(0.032)$ & $(0.040)$ & $(0.040)$ & $(0.125)$ & $(0.021)$ \\
+Adjacent in co-auth. network ($\mathtt{adjacent}$) & & $0.881^{***}$ & & $0.067^{***}$ & $-2.193^{***}$ & $-0.328^{***}$ \\
+& & $(0.012)$ & & $(0.014)$ & $(0.031)$ & $(0.015)$ \\
+Log mean degree ($\psi(\overline{\mathtt{degree}})$) & & $0.062^{***}$ & & $0.046^{***}$ & $0.944^{***}$ & $0.163^{***}$ \\
+& & $(0.009)$ & & $(0.010)$ & $(0.044)$ & $(0.008)$ \\
+Log diff. in degrees ($\psi(\Delta \mathtt{degree})$) & & $0.016^{*}$ & & $-0.001$ & $-0.016$ & $-0.003$ \\
+& & $(0.007)$ & & $(0.008)$ & $(0.017)$ & $(0.003)$ \\
+Log mean citation impact ($\psi(\overline{\mathtt{MNCS}})$) & & $0.032^{***}$ & & $0.019$ & $0.184^{***}$ & $0.032^{***}$ \\
+& & $(0.010)$ & & $(0.011)$ & $(0.042)$ & $(0.007)$ \\
+Log diff. in citation impacts ($\psi(\Delta\mathtt{MNCS})$) & & $0.032^{***}$ & & $0.033^{***}$ & $0.014$ & $0.002$ \\
+& & $(0.006)$ & & $(0.007)$ & $(0.014)$ & $(0.002)$ \\
+Research field overlap ($\mathtt{overlap}$) & & $0.581^{***}$ & & $0.205^{*}$ & & \\
+& & $(0.086)$ & & $(0.099)$ & & \\
+Squared research field overlap ($\mathtt{overlap}^2$) & & $0.596^{***}$ & & $0.522^{***}$ & & \\
+& & $(0.081)$ & & $(0.093)$ & & \\
+Pair fixed effects & & & & & Yes & Yes \\
+Year fixed effects & & & & & Yes & Yes \\
+\midrule
+Observations & 247,110 & 247,110 & 124,619 & 124,619 & 124,619 & 124,619 \\
+\quad Pairs & 46,052 & 46,052 & 19,091 & 19,091 & 19,091 & 19,091 \\
+Log-likelihood & -104,531.110 & -98,515.945 & -71,096.536 & -70,469.881 & -56,206.543 & -56,206.543 \\
+\bottomrule
+\end{tabular}

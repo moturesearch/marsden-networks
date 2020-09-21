@@ -1,0 +1,36 @@
+\begin{tabular}{l c c c c c}
+\toprule
+\multicolumn{5}{l}{Dependent variable: Co-authored in year $t$ ($\mathtt{coauth}_{ijt}$)} \\
+& \multicolumn{2}{c}{NZ collaborators} & \multicolumn{2}{c}{Collaborators} & Pooled pairs \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+& (1) & (2) & (3) & (4) & (5) \\
+\midrule
+First round co-members ($\mathtt{first}$) & $-0.017$ & $-0.173$ & $0.052^{*}$ & $-0.170$ & $0.163^{***}$ \\
+& $(0.028)$ & $(0.097)$ & $(0.026)$ & $(0.090)$ & $(0.027)$ \\
+Second round co-members ($\mathtt{second}$) & $-0.031$ & $-0.128$ & $-0.039$ & $-0.103$ & $-0.113^{*}$ \\
+& $(0.047)$ & $(0.159)$ & $(0.044)$ & $(0.147)$ & $(0.045)$ \\
+Funded co-members ($\mathtt{funded}$) & $0.627^{***}$ & $0.635^{***}$ & $0.578^{***}$ & $0.516^{**}$ & $0.574^{***}$ \\
+& $(0.047)$ & $(0.191)$ & $(0.045)$ & $(0.170)$ & $(0.046)$ \\
+Adjacent in co-auth. network ($\mathtt{adjacent}$) & $0.238^{***}$ & $-1.155^{***}$ & $0.380^{***}$ & $-1.115^{***}$ & $0.443^{***}$ \\
+& $(0.017)$ & $(0.054)$ & $(0.015)$ & $(0.048)$ & $(0.015)$ \\
+Log mean degree ($\psi(\overline{\mathtt{degree}})$) & $-0.015$ & $0.313^{***}$ & $0.045^{***}$ & $0.260^{***}$ & $0.146^{***}$ \\
+& $(0.012)$ & $(0.063)$ & $(0.010)$ & $(0.052)$ & $(0.010)$ \\
+Log diff. in degrees ($\psi(\Delta \mathtt{degree})$) & $0.050^{***}$ & $0.006$ & $0.018^{*}$ & $0.024$ & $0.017^{*}$ \\
+& $(0.009)$ & $(0.027)$ & $(0.008)$ & $(0.024)$ & $(0.008)$ \\
+Log mean citation impact ($\psi(\overline{\mathtt{MNCS}})$) & $0.024$ & $0.457^{***}$ & $-0.002$ & $0.446^{***}$ & $0.138^{***}$ \\
+& $(0.013)$ & $(0.065)$ & $(0.010)$ & $(0.058)$ & $(0.010)$ \\
+Log diff. in citation impacts ($\psi(\Delta\mathtt{MNCS})$) & $0.028^{***}$ & $-0.024$ & $0.032^{***}$ & $-0.023$ & $0.018^{*}$ \\
+& $(0.008)$ & $(0.020)$ & $(0.007)$ & $(0.018)$ & $(0.007)$ \\
+Research field overlap ($\mathtt{overlap}$) & $0.768^{***}$ & & $0.554^{***}$ & & $5.195^{***}$ \\
+& $(0.113)$ & & $(0.099)$ & & $(0.090)$ \\
+Squared research field overlap ($\mathtt{overlap}^2$) & $0.474^{***}$ & & $0.523^{***}$ & & $-3.007^{***}$ \\
+& $(0.107)$ & & $(0.093)$ & & $(0.086)$ \\
+Pair fixed effects & & Yes & & Yes & \\
+Year fixed effects & & Yes & & Yes & \\
+\midrule
+Observations & 121,581 & 121,581 & 170,773 & 67,661 & 293,457 \\
+\quad Pairs & 33,093 & 11,408 & 47,917 & 15,111 & 89,441 \\
+\quad Years & 6 & 6 & 6 & 6 & 6 \\
+Log-likelihood & -54,239.964 & -28,170.943 & -73,444.022 & -36,911.377 & -78,214.470 \\
+\bottomrule
+\end{tabular}

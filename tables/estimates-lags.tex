@@ -1,0 +1,30 @@
+\begin{tabular}{l c c c c}
+\toprule
+\multicolumn{5}{l}{Dependent variable: Co-authored in year $t$ ($\mathtt{coauth}_{ijt}$)} \\
+& \multicolumn{4}{c}{Publication lag (years)} \\
+\cmidrule(lr){2-5}
+& One & Two & Three & Four \\
+\midrule
+First round co-members ($\mathtt{first}$) & $0.715^{***}$ & $0.324^{***}$ & $0.046$ & $-0.173$ \\
+& $(0.057)$ & $(0.066)$ & $(0.078)$ & $(0.097)$ \\
+Second round co-members ($\mathtt{second}$) & $-0.087$ & $-0.218$ & $-0.141$ & $-0.128$ \\
+& $(0.099)$ & $(0.114)$ & $(0.132)$ & $(0.159)$ \\
+Funded co-members ($\mathtt{funded}$) & $0.086$ & $0.268$ & $0.501^{**}$ & $0.635^{***}$ \\
+& $(0.125)$ & $(0.137)$ & $(0.157)$ & $(0.191)$ \\
+Adjacent in co-auth. network ($\mathtt{adjacent}$) & $-2.193^{***}$ & $-1.902^{***}$ & $-1.612^{***}$ & $-1.155^{***}$ \\
+& $(0.031)$ & $(0.034)$ & $(0.041)$ & $(0.054)$ \\
+Log mean degree ($\psi(\overline{\mathtt{degree}})$) & $0.944^{***}$ & $0.703^{***}$ & $0.383^{***}$ & $0.313^{***}$ \\
+& $(0.044)$ & $(0.048)$ & $(0.053)$ & $(0.063)$ \\
+Log diff. in degrees ($\psi(\Delta \mathtt{degree})$) & $-0.016$ & $-0.001$ & $0.035$ & $0.006$ \\
+& $(0.017)$ & $(0.019)$ & $(0.022)$ & $(0.027)$ \\
+Log mean citation impact ($\psi(\overline{\mathtt{MNCS}})$) & $0.184^{***}$ & $0.279^{***}$ & $0.302^{***}$ & $0.457^{***}$ \\
+& $(0.042)$ & $(0.047)$ & $(0.054)$ & $(0.065)$ \\
+Log diff. in citation impacts ($\psi(\Delta\mathtt{MNCS})$) & $0.014$ & $-0.019$ & $-0.014$ & $-0.024$ \\
+& $(0.014)$ & $(0.015)$ & $(0.017)$ & $(0.020)$ \\
+\midrule
+Observations & 124,619 & 97,450 & 73,263 & 51,841 \\
+\quad Pairs & 19,091 & 16,620 & 14,060 & 11,408 \\
+\quad Years & 9 & 8 & 7 & 6 \\
+Log-likelihood & -56,206.543 & -46,741.286 & -37,486.585 & -28,170.943 \\
+\bottomrule
+\end{tabular}
