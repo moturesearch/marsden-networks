@@ -1,6 +1,6 @@
 # marsden-networks
 
-This repository contains the source material for "Research Funding and Collaboration."
+This repository contains the source material for "[Research Funding and Collaboration](https://doi.org/10.1016/j.respol.2021.104421)."
 
 ## Workflow
 
